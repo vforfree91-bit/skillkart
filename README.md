@@ -92,44 +92,6 @@ Students possess immense creativity, modern technical skills, and fresh perspect
 
 ---
 
-## 🚀 Deployment Guide
-
-### Option 1: Cloudflare Pages (Recommended)
-1. Go to [dash.cloudflare.com](https://dash.cloudflare.com/) → **Compute (Workers & Pages)** → **Pages** → **Connect to Git**.
-2. Select your GitHub repository: `saurabh222007/skillkart`.
-3. Set Framework Preset to **None** and leave the build command blank.
-4. Click **Save and Deploy**. Your site goes live instantly on Cloudflare's global edge network!
-
-### Option 2: Vercel
-Run via terminal or import in the Vercel dashboard:
-```bash
-npx vercel
-```
-*Pre-configured `vercel.json` with security headers and caching is included.*
-
-### Option 3: Netlify
-Deploy via Netlify CLI or drag-and-drop the directory into [app.netlify.com/drop](https://app.netlify.com/drop):
-```bash
-npx netlify deploy --prod --dir .
-```
-*Pre-configured `netlify.toml` is included.*
-
-### Option 4: GitHub Pages
-1. In your GitHub repository, open **Settings** → **Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch** and choose `main` / `/ (root)`.
-3. Click **Save**.
-
-### Option 5: Local Preview
-```bash
-npm start
-# Or using any static server:
-# npx serve .
-# python -m http.server 8000
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE). Built for emerging campus talent.
