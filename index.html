@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillKart — Your Skills. Your Opportunities.</title>
+  <meta name="description" content="A student-first marketplace for real creative, technical, and digital projects." />
+  <meta name="theme-color" content="#f7f4ee" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SkillKart — Your Skills. Your Opportunities." />
+  <meta property="og:description" content="A student-first marketplace for real creative, technical, and digital projects." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=85" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement">
+    <span>Now live across Ahmedabad campuses</span>
+    <span class="dot"></span>
+    <span>Build your first real portfolio</span>
+    <a href="#how">See how it works <b>→</b></a>
+  </div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="SkillKart Home">
+        <span class="logo-mark"><i></i><i></i></span>
+        SkillKart
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Find projects <span id="navProjectsCount" class="nav-badge">9</span></a>
+        <a href="#discover">Discover students</a>
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="text-btn" href="#messages">
+          Messages <span id="navUnreadCount" class="badge-count">1</span>
+        </a>
+        <a class="text-btn" href="#dashboard">Dashboard</a>
+        <button class="nav-cta open-post-project" type="button">Post a project <span>↗</span></button>
+        <button class="menu" id="mobileMenuBtn" aria-label="Open navigation menu" type="button">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <a href="#home">Home <span>→</span></a>
+    <a href="#projects">Find projects <span>→</span></a>
+    <a href="#discover">Discover students <span>→</span></a>
+    <a href="#services">Services <span>→</span></a>
+    <a href="#how">How it works <span>→</span></a>
+    <a href="#messages">Messages <span>→</span></a>
+    <a href="#dashboard">Dashboard <span>→</span></a>
+    <button class="primary-btn drawer-cta open-post-project" type="button">Post a project <span>↗</span></button>
+  </aside>
+
+  <!-- Main Unified View Router Container -->
+  <main id="mainContainer">
+
+    <!-- ==========================================
+         VIEW 1: LANDING PAGE (#home)
+         ========================================== -->
+    <section class="view-section active" id="view-home">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> A marketplace for emerging talent</p>
+            <h1>Your skill has <em>somewhere</em> to go.</h1>
+            <p class="hero-text">Find meaningful projects, create work you're proud of, and start building the career you want — one opportunity at a time.</p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#projects">Find projects <span>→</span></a>
+              <a class="round-link" href="#discover"><b>▶</b> Discover talent</a>
+            </div>
+            <div class="hero-proof">
+              <div class="avatars">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Student avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="Student avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="Student avatar">
+              </div>
+              <p><strong>2,500+</strong> students are making their work count</p>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="hero-photo"></div>
+            <div class="hero-sticker one">
+              <small>CREATIVE<br>COMMUNITY</small>
+              <b>✦</b>
+            </div>
+            <div class="floating-card brief">
+              <div class="card-icon purple">⌘</div>
+              <div>
+                <small>NEW BRIEF</small>
+                <b>Social media design</b>
+                <span>₹ 2,000 · 4 days</span>
+              </div>
+            </div>
+            <div class="floating-card person">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="Aarav Patel">
+              <div>
+                <b>Aarav Patel</b>
+                <span>Frontend dev · 4.9 ★</span>
+              </div>
+            </div>
+            <div class="orb"></div>
+          </div>
+        </div>
+        <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
+      </section>
+
+      <!-- Trust Bar -->
+      <section class="trust container">
+        <p>Built for a new generation of <i>doers</i></p>
+        <div>
+          <span>First</span>
+          <span>Right</span>
+          <span>Startups</span>
+          <span class="mint">Campus</span>
+          <span>Creators</span>
+        </div>
+      </section>
+
+      <!-- Teaser Services -->
+      <section class="section services" id="servicesTeaser">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow"><span></span> WHAT YOU CAN DO</p>
+              <h2>Bring your talent <em>to the table.</em></h2>
+            </div>
+            <a class="under-link" href="#services">Explore all services <span>→</span></a>
+          </div>
+          <div class="service-grid">
+            <article class="service-card dark reveal">
+              <div class="service-icon">✳</div>
+              <div>
+                <p>01</p>
+                <h3>Graphic<br>Design</h3>
+                <a href="#projects?category=design">Explore briefs <span>→</span></a>
+              </div>
+              <div class="scribble">Ideas<br>made visual</div>
+            </article>
+            <article class="service-card lime reveal">
+              <div class="service-icon">◒</div>
+              <div>
+                <p>02</p>
+                <h3>Video<br>Editing</h3>
+                <a href="#projects?category=video">Explore briefs <span>→</span></a>
+              </div>
+              <div class="shape circle-shape"></div>
+            </article>
+            <article class="service-card cream reveal">
+              <div class="service-icon">&lt;/&gt;</div>
+              <div>
+                <p>03</p>
+                <h3>Website<br>Development</h3>
+                <a href="#projects?category=dev">Explore briefs <span>→</span></a>
+              </div>
+              <div class="code-lines">{ }<br>&lt;/&gt;<br>( )</div>
+            </article>
+            <article class="service-card lilac reveal">
+              <div class="service-icon">✺</div>
+              <div>
+                <p>04</p>
+                <h3>Digital<br>Marketing</h3>
+                <a href="#projects?category=marketing">Explore briefs <span>→</span></a>
+              </div>
+              <div class="shape star-shape">✦</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Opportunities (Projects Preview) -->
+      <section class="section projects" id="projectsTeaser">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow"><span></span> FRESH OPPORTUNITIES</p>
+              <h2>Projects that need <em>your spark.</em></h2>
+            </div>
+            <div class="project-controls" id="homeProjectFilters">
+              <button class="filter active" data-filter="all">All</button>
+              <button class="filter" data-filter="design">Design</button>
+              <button class="filter" data-filter="video">Video</button>
+              <button class="filter" data-filter="dev">Development</button>
+            </div>
+          </div>
+          <div class="project-grid" id="homeFeaturedProjectsGrid"></div>
+          <a class="outline-btn" href="#projects">Browse all open marketplace projects <span>→</span></a>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="section how" id="how">
+        <div class="container how-layout">
+          <div class="how-left reveal">
+            <p class="eyebrow"><span></span> SIMPLE BY DESIGN</p>
+            <h2>Good work starts with a <em>great match.</em></h2>
+            <p>Whether you’re looking for your first brief or your next brilliant collaborator, we keep things clear, fair and human.</p>
+            <button class="primary-btn open-modal" type="button">Get started <span>→</span></button>
+          </div>
+          <div class="steps">
+            <article class="step reveal">
+              <span>01</span>
+              <div>
+                <h3>Show what you do</h3>
+                <p>Set up a profile that feels like you. Add projects, skills and the kind of work you love to make.</p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="step reveal">
+              <span>02</span>
+              <div>
+                <h3>Find your right-fit project</h3>
+                <p>Discover thoughtfully scoped opportunities from founders and businesses who value fresh perspectives.</p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="step reveal">
+              <span>03</span>
+              <div>
+                <h3>Do work that moves you forward</h3>
+                <p>Deliver milestones, get paid securely, earn a review and leave with something tangible for your portfolio.</p>
+              </div>
+              <b>↗</b>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- For Businesses -->
+      <section class="talent" id="talent">
+        <div class="container">
+          <div class="talent-banner reveal">
+            <div class="talent-copy">
+              <p class="eyebrow"><span></span> FOR BUSINESSES & FOUNDERS</p>
+              <h2>Fresh thinking.<br><em>Ready to work.</em></h2>
+              <p>Meet ambitious student creators and developers who bring a new eye to your next project — without agency overhead.</p>
+              <a class="light-btn" href="#discover">Discover student talent <span>↗</span></a>
+            </div>
+            <div class="talent-image">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85" alt="Students collaborating at desk" loading="lazy">
+              <div class="tape">LOOKING FOR<br>YOUR NEXT<br>CREATIVE?</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Stories -->
+      <section class="section stories">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow"><span></span> REAL STARTS HERE</p>
+              <h2>Small beginnings.<br><em>Big stories.</em></h2>
+            </div>
+            <div class="slider-arrows">
+              <button id="prevStory" aria-label="Previous story">←</button>
+              <button id="nextStory" aria-label="Next story">→</button>
+            </div>
+          </div>
+          <div class="story-wrap reveal">
+            <aside>
+              <div class="quote-mark">“</div>
+              <blockquote id="storyQuote">My first SkillKart project was a menu shoot for a café near campus. It gave me the confidence to call myself a photographer, not just someone who takes photos.</blockquote>
+              <div class="person-line">
+                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=100&q=80" alt="Student photo">
+                <p id="storyPerson"><b>Ishita Shah</b><span>Photography student, NID Ahmedabad</span></p>
+              </div>
+            </aside>
+            <div class="story-photo" id="storyPhoto"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Banner -->
+      <section class="join">
+        <div class="container join-inner reveal">
+          <p class="eyebrow"><span></span> MAKE YOUR MOVE</p>
+          <h2>The work you want<br>to be known for<br><em>starts here.</em></h2>
+          <p>Join a community of students and businesses making more room for thoughtful work.</p>
+          <div>
+            <button class="primary-btn open-modal" type="button">Create your profile <span>→</span></button>
+            <button class="plain-btn open-post-project" type="button">Post a project</button>
+          </div>
+          <div class="join-star">✦</div>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- ==========================================
+         VIEW 2: FIND PROJECTS MARKETPLACE (#projects)
+         ========================================== -->
+    <section class="view-section" id="view-projects">
+      <div class="subview-header">
+        <div class="container">
+          <p class="app-kicker">PROJECT MARKETPLACE</p>
+          <h1 class="app-title">Find work that <em>moves you forward.</em></h1>
+          <p class="app-intro">Browse clearly scoped briefs across design, software development, video editing, digital marketing and data. Apply with one click and track everything seamlessly.</p>
+        </div>
+      </div>
+
+      <div class="container projects-view-wrap">
+        <!-- Marketplace Ribbon Stats -->
+        <div class="marketplace-stats-ribbon">
+          <div class="mp-stat-card">
+            <b>100%</b>
+            <span>Verified Student Briefs</span>
+          </div>
+          <div class="mp-stat-card">
+            <b>₹ 3,800</b>
+            <span>Average Project Payout</span>
+          </div>
+          <div class="mp-stat-card">
+            <b>75%</b>
+            <span>Remote-Friendly Work</span>
+          </div>
+          <div class="mp-stat-card">
+            <b>&lt; 48 hrs</b>
+            <span>Average Response Rate</span>
+          </div>
+        </div>
+
+        <!-- Filter Controls Toolbar with REAL SVG SEARCH ICON -->
+        <div class="filter-toolbar">
+          <div class="search-bar-wrap">
+            <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-input" id="projectSearchInput" placeholder="Search by project title, required skills, client or keyword..." autocomplete="off">
+            <button class="search-clear-btn" id="projectSearchClear" title="Clear search" type="button">×</button>
+          </div>
+
+          <select class="filter-select" id="projectLevelSelect" aria-label="Filter by experience level">
+            <option value="">All Experience Levels</option>
+            <option value="Beginner">Beginner Friendly</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+
+          <select class="filter-select" id="projectLocationSelect" aria-label="Filter by location">
+            <option value="">All Locations</option>
+            <option value="Remote">Remote Only</option>
+            <option value="Ahmedabad">Ahmedabad Local</option>
+          </select>
+
+          <select class="filter-select" id="projectSortSelect" aria-label="Sort projects">
+            <option value="recommended">Sort: Recommended</option>
+            <option value="budget-high">Budget: High to Low</option>
+            <option value="budget-low">Budget: Low to High</option>
+            <option value="deadline">Deadline: Soonest</option>
+          </select>
+
+          <button class="filter-reset-btn" id="resetProjectFilters" type="button">Reset</button>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="pill-filter-bar" id="projectCategoryPills">
+          <button class="pill-btn active" data-cat="all" type="button">All Categories</button>
+          <button class="pill-btn" data-cat="design" type="button">Design & Creative</button>
+          <button class="pill-btn" data-cat="dev" type="button">Development</button>
+          <button class="pill-btn" data-cat="video" type="button">Video & Media</button>
+          <button class="pill-btn" data-cat="marketing" type="button">Marketing & Growth</button>
+          <button class="pill-btn" data-cat="data" type="button">Data & Analytics</button>
+          <button class="pill-btn" data-cat="writing" type="button">Writing</button>
+        </div>
+
+        <!-- Results Counter -->
+        <div class="results-summary-bar">
+          <span id="projectsCountLabel">Showing projects...</span>
+          <button class="ghost-btn open-post-project" type="button">+ Post new opportunity</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="project-grid" id="projectsDirectoryGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         VIEW 3: DISCOVER STUDENTS DIRECTORY (#discover)
+         ========================================== -->
+    <section class="view-section" id="view-discover">
+      <div class="subview-header">
+        <div class="container">
+          <p class="app-kicker">TALENT DIRECTORY</p>
+          <h1 class="app-title">Discover students ready to <em>make an impact.</em></h1>
+          <p class="app-intro">Explore ambitious emerging talent across design, engineering, content creation, and business from India's premier academic institutes. Transparent pricing, verified student creators.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 35px; padding-bottom: 90px;">
+        <!-- Discover Filter Toolbar with REAL SVG SEARCH ICON -->
+        <div class="filter-toolbar">
+          <div class="search-bar-wrap">
+            <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-input" id="studentSearchInput" placeholder="Search by student name, college, skill or discipline..." autocomplete="off">
+            <button class="search-clear-btn" id="studentSearchClear" title="Clear search" type="button">×</button>
+          </div>
+
+          <select class="filter-select" id="studentCategory" aria-label="Filter student specialty">
+            <option value="">All Disciplines</option>
+            <option value="dev">Developers & Software</option>
+            <option value="design">Designers & UI/UX</option>
+            <option value="media">Photography, Video & Audio</option>
+            <option value="writer">Writers & Copywriters</option>
+            <option value="marketing">Marketing & Social Media</option>
+            <option value="data">Data Analytics & AI/ML</option>
+            <option value="cad">3D, CAD & Architecture</option>
+            <option value="fashion">Fashion & Textile Styling</option>
+            <option value="assistant">Virtual Assistance & Operations</option>
+          </select>
+
+          <select class="filter-select" id="studentLevel" aria-label="Filter student skill level">
+            <option value="">All Skill Levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+
+          <select class="filter-select" id="studentAvailability" aria-label="Filter student availability">
+            <option value="">Any Availability</option>
+            <option value="Available now">Available now</option>
+            <option value="Available this week">Available this week</option>
+            <option value="Available next week">Available next week</option>
+          </select>
+
+          <select class="filter-select" id="studentRating" aria-label="Filter by rating">
+            <option value="">Any Rating</option>
+            <option value="4.8">4.8 ★ & higher</option>
+            <option value="4.6">4.6 ★ & higher</option>
+          </select>
+
+          <button class="filter-reset-btn" id="clearStudentFilters" type="button">Clear</button>
+        </div>
+
+        <!-- Student Category Quick Selection Pills -->
+        <div class="pill-filter-bar" id="studentCategoryPills">
+          <button class="pill-btn active" data-cat="all" type="button">All Disciplines</button>
+          <button class="pill-btn" data-cat="dev" type="button">Developers & Software</button>
+          <button class="pill-btn" data-cat="design" type="button">Design & UI/UX</button>
+          <button class="pill-btn" data-cat="media" type="button">Photo, Video & Audio</button>
+          <button class="pill-btn" data-cat="writer" type="button">Writers & Copy</button>
+          <button class="pill-btn" data-cat="marketing" type="button">Marketing & Social</button>
+          <button class="pill-btn" data-cat="data" type="button">Data & AI</button>
+          <button class="pill-btn" data-cat="cad" type="button">3D, CAD & Architecture</button>
+          <button class="pill-btn" data-cat="fashion" type="button">Fashion & Styling</button>
+          <button class="pill-btn" data-cat="assistant" type="button">Virtual Assistant</button>
+        </div>
+
+        <!-- Summary & View Mode Toggle -->
+        <div class="results-summary-bar">
+          <span id="studentsCountLabel">Showing student creators...</span>
+          <div class="view-mode-toggle">
+            <button class="active" id="viewModeGrid" type="button">Grid</button>
+            <button id="viewModeList" type="button">List</button>
+          </div>
+        </div>
+
+        <!-- Student Cards Grid -->
+        <div class="student-grid" id="studentsGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         VIEW 4: SERVICES CATALOG (#services)
+         ========================================== -->
+    <section class="view-section" id="view-services">
+      <div class="subview-header">
+        <div class="container">
+          <p class="app-kicker">WHAT SKILLKART ENABLES</p>
+          <h1 class="app-title">Find a fresh perspective for every <em>good idea.</em></h1>
+          <p class="app-intro">Explore specialized project disciplines tailored for emerging talent strengths and small, high-impact briefs. Every package is transparently agreed before commencement.</p>
+        </div>
+      </div>
+
+      <div class="container services-view-wrap">
+        <div class="service-directory-grid" id="servicesDirectoryGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         VIEW 5: MESSENGER (#messages)
+         ========================================== -->
+    <section class="view-section" id="view-messages">
+      <div class="messenger-wrap">
+        <!-- Sidebar Contacts -->
+        <aside class="conversations-sidebar">
+          <h2>Messages</h2>
+          <div class="search-bar-wrap" style="margin-bottom: 8px;">
+            <svg class="search-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-input" style="height: 40px; font-size: 12px;" placeholder="Search conversations...">
+          </div>
+          <div class="convo-list" id="messengerConvoList"></div>
+        </aside>
+
+        <!-- Chat Area -->
+        <div class="chat-main-area">
+          <header class="chat-head-bar">
+            <div class="chat-head-user">
+              <div>
+                <b id="chatCurrentUserName">Meher Shah</b>
+                <small id="chatCurrentUserRole">Active now · Responds within 1 hr</small>
+              </div>
+            </div>
+            <div class="chat-call-actions">
+              <button class="ghost-btn" id="chatVoiceCallBtn" type="button">📞 Voice call</button>
+              <button class="ghost-btn" id="chatVideoCallBtn" type="button">📹 Video call</button>
+            </div>
+          </header>
+
+          <div class="messages-stream" id="chatMessageStream"></div>
+
+          <form class="message-composer-form" id="chatMessageForm">
+            <input class="composer-input" id="chatInputBox" placeholder="Write a message to discuss your project..." required autocomplete="off">
+            <button class="primary-btn" type="submit">Send <span>→</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         VIEW 6: DASHBOARD (#dashboard)
+         ========================================== -->
+    <section class="view-section" id="view-dashboard">
+      <div class="dashboard-layout">
+        <!-- Dashboard Sidebar -->
+        <aside class="dash-sidebar">
+          <h2>Overview</h2>
+          <a class="active" href="#dashboard">My Activity</a>
+          <a href="#projects">Find Projects</a>
+          <a href="#discover">Discover Students</a>
+          <a href="#messages">Messages</a>
+          <a href="#home">Back to Home</a>
+        </aside>
+
+        <!-- Main Dashboard View -->
+        <div class="dash-content">
+          <p class="eyebrow"><span></span> BUSINESS & STUDENT VIEW</p>
+          <h1>Good morning, Maya.</h1>
+          <p class="app-intro">Track your active bookings, submitted project proposals, saved bookmarks, and simulated escrow payments.</p>
+
+          <!-- Metrics Stat Cards -->
+          <div class="dash-stats-grid">
+            <div class="dash-stat-item">
+              <b id="dashBookingsCount">1</b>
+              <span>Active Bookings</span>
+            </div>
+            <div class="dash-stat-item">
+              <b id="dashAppsCount">1</b>
+              <span>Submitted Applications</span>
+            </div>
+            <div class="dash-stat-item">
+              <b id="dashSavedCount">1</b>
+              <span>Saved Projects</span>
+            </div>
+            <div class="dash-stat-item">
+              <b id="dashPaymentsCount">0</b>
+              <span>Completed Transactions</span>
+            </div>
+          </div>
+
+          <!-- Dashboard Sections Grid -->
+          <div class="dash-sections-grid">
+            <div class="dash-box">
+              <h3>Active Booking Requests</h3>
+              <div id="dashBookingsList"></div>
+
+              <h3 style="margin-top: 32px;">Submitted Project Applications</h3>
+              <div id="dashAppsList"></div>
+            </div>
+
+            <div class="dash-box">
+              <h3>Saved Projects</h3>
+              <div id="dashSavedList"></div>
+
+              <div class="info-notice" style="margin-top: 25px;">
+                <b>Payment Simulation Notice:</b> Once a student accepts a booking request, you can test the simulated checkout. No real cards or funds are debited.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       GLOBAL MODALS
+       ========================================== -->
+
+  <!-- 1. Post a Project Modal -->
+  <div class="modal-overlay" id="postProjectModal" role="dialog" aria-modal="true" aria-labelledby="postModalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <p class="eyebrow"><span></span> CREATE AN OPPORTUNITY</p>
+      <h2 id="postModalTitle" style="font-size: 32px; margin-bottom: 8px;">Post a new <em>project brief.</em></h2>
+      <p style="color: var(--muted); font-size: 13px; margin-bottom: 22px;">Reach motivated student talent across universities in minutes.</p>
+
+      <form id="postProjectForm">
+        <div class="flow-form-group">
+          <label for="newPrjTitle">Project Title *</label>
+          <input type="text" id="newPrjTitle" placeholder="e.g. Modern responsive portfolio for architecture studio" required>
+        </div>
+        <div class="form-row-2col">
+          <div class="flow-form-group">
+            <label for="newPrjCategory">Category *</label>
+            <select id="newPrjCategory" required>
+              <option value="design">Design & Creative</option>
+              <option value="dev">Web & Mobile Dev</option>
+              <option value="video">Video & Media</option>
+              <option value="marketing">Marketing & Growth</option>
+              <option value="data">Data & Analytics</option>
+              <option value="writing">Writing & Copy</option>
+            </select>
+          </div>
+          <div class="flow-form-group">
+            <label for="newPrjClient">Company / Studio Name *</label>
+            <input type="text" id="newPrjClient" placeholder="e.g. Studio Craft" required>
+          </div>
+        </div>
+        <div class="form-row-2col">
+          <div class="flow-form-group">
+            <label for="newPrjBudget">Budget (INR) *</label>
+            <input type="text" id="newPrjBudget" placeholder="e.g. 3,500" required>
+          </div>
+          <div class="flow-form-group">
+            <label for="newPrjDeadline">Estimated Deadline</label>
+            <input type="text" id="newPrjDeadline" placeholder="e.g. 5 days left">
+          </div>
+        </div>
+        <div class="form-row-2col">
+          <div class="flow-form-group">
+            <label for="newPrjLocation">Location</label>
+            <select id="newPrjLocation">
+              <option value="Remote">Remote</option>
+              <option value="Ahmedabad">Ahmedabad Local</option>
+            </select>
+          </div>
+          <div class="flow-form-group">
+            <label for="newPrjLevel">Experience Level</label>
+            <select id="newPrjLevel">
+              <option value="Beginner">Beginner Friendly</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+        <div class="flow-form-group">
+          <label for="newPrjTags">Key Skills Needed (comma-separated)</label>
+          <input type="text" id="newPrjTags" placeholder="e.g. React, Tailwind CSS, Figma">
+        </div>
+        <div class="flow-form-group">
+          <label for="newPrjDesc">Project Description & Goals *</label>
+          <textarea id="newPrjDesc" placeholder="Describe the scope, background, references and deliverables..." required></textarea>
+        </div>
+        <button class="primary-btn" type="submit" style="width: 100%; margin-top: 10px;">Publish project to marketplace <span>→</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Project Details Modal -->
+  <div class="modal-overlay" id="projectDetailsModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <span class="pill" id="detailPrjCategory">Category</span>
+      <h2 id="detailPrjTitle" style="font-size: 28px; margin: 12px 0 8px;">Project Title</h2>
+      <p style="color: var(--muted); font-size: 13px; margin-bottom: 16px;">
+        Posted by <strong id="detailPrjClient" style="color: var(--ink);">Client</strong> · <span id="detailPrjLocation">Location</span>
+      </p>
+
+      <div style="background: #f7f6f1; padding: 16px; border-radius: var(--radius-sm); margin-bottom: 20px;">
+        <span style="font-size: 11px; color: var(--muted); text-transform: uppercase; font-family: var(--mono); letter-spacing: 0.08em;">Total Budget</span>
+        <div id="detailPrjBudget" style="font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--indigo);">₹ 0</div>
+      </div>
+
+      <h4 style="font-size: 16px; margin-bottom: 8px;">Project Overview</h4>
+      <p id="detailPrjDesc" style="color: #4a5153; font-size: 13px; line-height: 1.65; margin-bottom: 18px;"></p>
+
+      <h4 style="font-size: 16px; margin-bottom: 8px;">Key Deliverables</h4>
+      <ul id="detailPrjDeliverables" style="font-size: 13px; color: #4a5153; line-height: 1.6; padding-left: 20px; margin-bottom: 20px;"></ul>
+
+      <h4 style="font-size: 16px; margin-bottom: 8px;">Required Skills</h4>
+      <div class="tags" id="detailPrjTags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 24px;"></div>
+
+      <button class="primary-btn" id="detailPrjApplyBtn" type="button" style="width: 100%;">Apply for this project now <span>→</span></button>
+    </div>
+  </div>
+
+  <!-- 3. Apply to Project Modal -->
+  <div class="modal-overlay" id="applyProjectModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <p class="eyebrow"><span></span> PROJECT APPLICATION</p>
+      <h2 id="applyPrjTitleHeading" style="font-size: 26px; margin-bottom: 6px;">Apply for Project</h2>
+      <p id="applyPrjClientMeta" style="color: var(--muted); font-size: 12px; margin-bottom: 20px;"></p>
+
+      <form id="applyProjectForm">
+        <input type="hidden" id="applyProjectId">
+        <div class="flow-form-group">
+          <label for="applicantName">Your Full Name *</label>
+          <input type="text" id="applicantName" placeholder="e.g. Maya Sharma" required>
+        </div>
+        <div class="flow-form-group">
+          <label for="applicantEmail">Email or Portfolio Link *</label>
+          <input type="text" id="applicantEmail" placeholder="e.g. maya@example.com or github.com/maya" required>
+        </div>
+        <div class="flow-form-group">
+          <label for="applicantRate">Your Proposed Bid (INR) *</label>
+          <input type="text" id="applicantRate" placeholder="e.g. ₹ 2,500" required>
+        </div>
+        <div class="flow-form-group">
+          <label for="applicantNote">Quick Pitch / Why You're a Great Fit *</label>
+          <textarea id="applicantNote" placeholder="Explain your experience with relevant tools or link previous work samples..." required></textarea>
+        </div>
+        <button class="primary-btn" type="submit" style="width: 100%; margin-top: 10px;">Submit Application <span>→</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Student Profile Modal -->
+  <div class="modal-overlay" id="studentProfileModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog profile-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <div class="student-profile-hero">
+        <img id="profileModalImg" src="" alt="Student photo">
+        <div class="student-profile-intro">
+          <span class="verified-tag">VERIFIED STUDENT CREATOR</span>
+          <h2 id="profileModalName">Student Name</h2>
+          <b id="profileModalRole">Role</b>
+          <p id="profileModalBio">Bio</p>
+          <p id="profileModalMeta" style="font-size: 11px; color: var(--muted); margin-bottom: 20px;"></p>
+          <div class="student-profile-actions">
+            <button class="primary-btn" id="profileModalBookBtn" type="button">Book student <span>→</span></button>
+            <button class="ghost-btn" id="profileModalChatBtn" type="button">Message</button>
+            <button class="ghost-btn" id="profileModalCallBtn" type="button">Schedule call</button>
+          </div>
+        </div>
+      </div>
+      <div class="student-profile-body">
+        <div>
+          <h3>Skills & Proficiency</h3>
+          <div id="profileModalSkills"></div>
+
+          <h3 style="margin-top: 26px;">Portfolio Samples</h3>
+          <div class="portfolio-gallery">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=500&q=75" alt="Sample portfolio 1" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=75" alt="Sample portfolio 2" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=500&q=75" alt="Sample portfolio 3" loading="lazy">
+          </div>
+        </div>
+        <aside class="profile-detail-sidebar">
+          <div>
+            <b>Availability</b>
+            <span id="profileModalAvail">Available now</span>
+          </div>
+          <div>
+            <b>Languages</b>
+            <span id="profileModalLang">English, Hindi</span>
+          </div>
+          <div>
+            <b>Reviews & Track Record</b>
+            <span id="profileModalReviews">4.9 / 5</span>
+          </div>
+          <div>
+            <b>Institute</b>
+            <span id="profileModalEducation">College</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. 4-Step Booking Wizard Modal -->
+  <div class="modal-overlay" id="bookingWizardModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+          <p class="eyebrow" style="margin-bottom: 4px;"><span></span> WORK REQUEST</p>
+          <h2 id="bookingStudentNameTitle" style="font-size: 28px; margin: 0;">Work with Student</h2>
+        </div>
+        <span id="bookingStepLabel" style="font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--indigo);">Step 1 of 4</span>
+      </div>
+
+      <div class="flow-progress-bar">
+        <i id="bookingProgressBar" style="width: 25%;"></i>
+      </div>
+
+      <div id="bookingStepBody"></div>
+
+      <div class="flow-footer-nav">
+        <button class="ghost-btn" id="bookingBackBtn" type="button">Back</button>
+        <button class="primary-btn" id="bookingNextBtn" type="button">Continue <span>→</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Demo Payment Checkout Modal -->
+  <div class="modal-overlay" id="paymentModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <p class="eyebrow"><span></span> SIMULATED ESCROW CHECKOUT</p>
+      <h2 style="font-size: 30px; margin-bottom: 8px;">Review Demo Payment</h2>
+      <div class="info-notice">
+        <b>Simulation Sandbox:</b> No real cards, bank accounts, or money will be transferred or collected. This is a functional prototype escrow verification.
+      </div>
+
+      <div style="background: #f7f6f1; padding: 18px; border-radius: var(--radius-sm); margin: 18px 0; font-size: 13px; line-height: 1.8;">
+        Student: <strong id="paymentStudentName">Student</strong><br>
+        Service: <strong id="paymentServiceName">Service Brief</strong><br>
+        Service Fee: <span id="paymentAmount">₹ 2,500</span><br>
+        SkillKart Platform Fee: <strong>₹ 0 (Campus beta)</strong><br>
+        <strong style="font-size: 16px; color: var(--indigo); display: block; margin-top: 6px;">Total Escrow Amount: <span id="paymentTotalAmount">₹ 2,500</span></strong>
+      </div>
+
+      <div class="flow-form-group">
+        <label>Select Demo Payment Rail</label>
+        <div class="choice-cards-grid">
+          <button class="choice-box selected" type="button">UPI Sandbox (Instant)</button>
+          <button class="choice-box" type="button">Demo Debit / Credit Card</button>
+          <button class="choice-box" type="button">Net Banking Simulation</button>
+          <button class="choice-box" type="button">Campus Credit</button>
+        </div>
+      </div>
+
+      <button class="primary-btn" id="confirmDemoPaymentBtn" type="button" style="width: 100%; margin-top: 15px;">Confirm Demo Payment <span>→</span></button>
+    </div>
+  </div>
+
+  <!-- 7. Welcome Onboarding Modal -->
+  <div class="modal-overlay" id="welcomeModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">×</button>
+      <p class="eyebrow"><span></span> WELCOME TO SKILLKART</p>
+      <h2 style="font-size: 34px; margin-bottom: 8px;">Let's make a <em>good start.</em></h2>
+      <p style="color: var(--muted); font-size: 13px; margin-bottom: 24px;">Tell us how you would like to use SkillKart and we'll tailor your experience.</p>
+
+      <div class="modal-choices choice-cards-grid">
+        <button class="choice-box" type="button" style="padding: 20px;">
+          <b style="font-size: 14px; display: block; margin-bottom: 6px;">I'm a student creator</b>
+          <span style="color: var(--muted); font-size: 11px; line-height: 1.5; display: block;">I want to find real client projects and build my verified portfolio →</span>
+        </button>
+        <button class="choice-box" type="button" style="padding: 20px;">
+          <b style="font-size: 14px; display: block; margin-bottom: 6px;">I'm hiring or founding</b>
+          <span style="color: var(--muted); font-size: 11px; line-height: 1.5; display: block;">I want to find talented emerging student creatives and developers →</span>
+        </button>
+      </div>
+
+      <form id="welcomeForm" style="display: none; margin-top: 20px;">
+        <div class="flow-form-group">
+          <label for="welcomeEmail">Enter your email address</label>
+          <input type="email" id="welcomeEmail" placeholder="you@university.edu" required>
+        </div>
+        <button class="primary-btn" type="submit" style="width: 100%;">Continue to SkillKart <span>→</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="container footer-top">
+      <a class="logo" href="#home">
+        <span class="logo-mark"><i></i><i></i></span>
+        SkillKart
+      </a>
+      <p>Your Skills. Your Opportunities.</p>
+      <div class="footer-links">
+        <a href="#projects">Find projects</a>
+        <a href="#discover">Discover students</a>
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SkillKart. Built for emerging talent across Ahmedabad and beyond.</span>
+      <div>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Community guidelines</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>

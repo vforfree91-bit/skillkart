@@ -1,0 +1,20 @@
+{
+  "name": "skillkart",
+  "version": "1.0.0",
+  "description": "SkillKart — A student-first marketplace for real creative, technical, and digital projects.",
+  "scripts": {
+    "start": "npx serve .",
+    "serve": "npx serve .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "marketplace",
+    "students",
+    "freelance",
+    "portfolio",
+    "projects"
+  ],
+  "author": "SkillKart",
+  "license": "MIT"
+}
+
