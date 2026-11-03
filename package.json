@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SkillKart — A student-first marketplace for real creative, technical, and digital projects.",
   "scripts": {
+    "dev": "npx --yes serve@14 . -l 3000",
     "start": "npx serve .",
     "serve": "npx serve .",
     "build": "echo 'Static build ready'"
